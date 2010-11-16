@@ -21,7 +21,7 @@ gem 'autotest'
 gem 'rspec', '>=2.0.1'
 gem 'rspec-rails', '>=2.0.1'
 
-#run "bundle install"
+run "bundle install"
 
 # plugins
 
@@ -58,7 +58,8 @@ development:
   timeout: 5000
   database: #{app_name}_development
   encoding: utf8
-  username: root
+  username: 
+  password:
 
 test:
   adapter: mysql
@@ -67,7 +68,8 @@ test:
   timeout: 5000
   database: #{app_name}_test
   encoding: utf8
-  username: root
+  username: 
+  password:
 DATABASE
 
 remove_file "config/database.yml"

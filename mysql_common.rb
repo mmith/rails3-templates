@@ -117,7 +117,7 @@ RSpec.configure do |config|
 
 end
 SPEC_HELPER
-create_file "spec/spec_helper", spec_helper
+create_file "spec/spec_helper.rb", spec_helper
 
 # git
 

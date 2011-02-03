@@ -7,6 +7,7 @@ gem 'mysql', :require => 'mysql'
 gem 'acts_as_list'
 gem 'prawn'
 gem 'haml'
+gem 's3'
 gem 'devise'
 gem 'state_machine'
 gem 'will_paginate'
@@ -14,12 +15,12 @@ gem 'meta_search'
 gem 'paperclip', '2.3.4'
 gem 'ckeditor', '3.4.2.pre'
 gem 'capistrano'
-gem 'thin'
-gem 'shoulda'
-gem 'factory_girl_rails'
-gem 'autotest'
-gem 'rspec', '>=2.0.1'
-gem 'rspec-rails', '>=2.0.1'
+gem 'thin', :group => [:development, :test]
+gem 'shoulda', :group => [:development, :test]
+gem 'factory_girl_rails', :group => [:development, :test]
+gem 'autotest', :group => [:development, :test]
+gem 'rspec', '>=2.0.1', :group => [:development, :test]
+gem 'rspec-rails', '>=2.0.1', :group => [:development, :test]
 
 run "bundle install"
 
